@@ -27,3 +27,6 @@ dynArr = []
 for _ in range(n):
     newList= [] 
     dynArr.append(newList)
+
+# getting single inputs
+n = int(input().strip())
