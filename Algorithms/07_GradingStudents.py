@@ -1,12 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-
 #
 # Complete the 'gradingStudents' function below.
 #
@@ -18,10 +11,10 @@ def roundNearestFive(grade, base=5):
     return base * round(grade / base)
 
 
-def gradingStudents(grades):
+def gradingStudents(marks):
     # Write your code here
     newGrades = []
-    for grade in grades:
+    for grade in marks:
         modGrade = roundNearestFive(grade)
         if (modGrade > grade) and ((modGrade - grade) < 3) and (modGrade >= 40):
             # print(modGrade)
